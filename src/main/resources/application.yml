@@ -1,6 +1,14 @@
 server:
   port: 8080
+  tomcat:
+    uri-encoding: UTF-8
 spring:
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+
   datasource:
     name: depot
     url: jdbc:mysql://localhost:3307/depot?useUnicode=true&amp;characterEncoding=UTF-8

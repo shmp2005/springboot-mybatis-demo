@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int addUser(User user) {
+        System.out.println(user);
         return userMapper.insertSelective(user);
     }
 
