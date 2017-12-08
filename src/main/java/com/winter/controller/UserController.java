@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping(value = "/add", produces="text/plain;charset=UTF-8")
+    @PostMapping(value = "/add")
     public int addUser(User user) {
         System.out.println("user: " + user);
         return userService.addUser(user);
